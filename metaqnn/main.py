@@ -287,7 +287,15 @@ if __name__ == '__main__':
     )
 
     os.environ["CUDA_VISIBLE_DEVICES"] = args.number_gpu
-    
+
+    # verifica esistenza percorso combinato
+
+    bulk_root = _model.hyper_parameters.BULK_ROOT
+    logs_directory = "qlearner_logs"
+
+    combined_path = os.path.join(bulk_root, logs_directory)
+    print("Combined path: ", combined_path)
+
     factory = QCoordinator(
         path.normpath(path.join(_model.hyper_parameters.BULK_ROOT, "qlearner_logs")),
         _model.state_space_parameters,

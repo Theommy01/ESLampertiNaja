@@ -164,7 +164,8 @@ class OneCycleLR(Callback):
         self.mid_cycle_id = int(self.num_iterations * ((1. - self.end_percentage)) / float(2))
 
         self._reset()
-        K.set_value(self.model.optimizer.lr, self.compute_lr())
+        # K.set_value(self.model.optimizer.lr, self.compute_lr())
+        self.model.optimizer.lr = self.compute_lr()
 
         if self._update_momentum:
             if not hasattr(self.model.optimizer, 'momentum'):
@@ -180,8 +181,10 @@ class OneCycleLR(Callback):
         new_lr = self.compute_lr()
 
         self.history.setdefault('lr', []).append(
-            K.get_value(self.model.optimizer.lr))
-        K.set_value(self.model.optimizer.lr, new_lr)
+            self.model.optimizer.lr)
+            # K.get_value(self.model.optimizer.lr))
+        self.model.optimizer.lr = new_lr
+        # K.set_value(self.model.optimizer.lr, new_lr)
 
         if self._update_momentum:
             if not hasattr(self.model.optimizer, 'momentum'):

@@ -39,8 +39,7 @@ class TensorFlowRunner(object):
 
     @staticmethod
     def count_trainable_params(model):
-        return np.sum([np.prod(K.get_value(w).shape) for w in model.trainable_weights])
-        # return np.sum([K.count_params(w) for w in model.trainable_weights])
+        return np.sum([np.prod(w.shape) for w in model.trainable_variables])
 
     @staticmethod
     def get_strategy():
