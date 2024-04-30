@@ -2,6 +2,7 @@ Reinforcement Learning for Profiled Side-Channel Analysis
 ========
 This is a project done for the course Embedded Systems in Politecnico di Milano.
 The goal was to take the project that can be found at the folder https://github.com/dade145/Reinforcement-Learning-for-SCA and update it to support Keras 3.0 and Python 3.11.
+To do so we used Ubuntu 22.0.4, since is the only OS that do not cause problems with packages.
 The code for the experiments generating SCA CNNs can be found in the `metaqnn` folder.
 The model used is inside the `dataset` folder.
 To run an experiment, use `python -m metaqnn.main dataset`.
