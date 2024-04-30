@@ -16,6 +16,8 @@ Inside the folder "data/bench/experiment_value/trained_models" can be found mode
 #
 Here are some examples of plots obtained after running the code:
 
+![Running helper](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/running_helper.png)
+
 ![Network building - 1](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Running%20main%201.png)
 
 ![Network building - 2](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Running%20main%202.png)
