@@ -1,14 +1,20 @@
 Reinforcement Learning for Profiled Side-Channel Analysis
 ========
+This is a project done for the course Embedded Systems in Politecnico di Milano.
+The goal was to take the project that can be found at the folder https://github.com/dade145/Reinforcement-Learning-for-SCA and update it to support Keras 3.0 and Python 3.11.
 The code for the experiments generating SCA CNNs can be found in the `metaqnn` folder.
-The definitions for the experiments are in the `models` folder.
-To run an experiment, use `python -m metaqnn.main <model>`, where model can be any of the folders in the `models` folder.
-To generate an overview of the results and to create the scatter plots, use `python -m metaqnn.display_results -h` for instructions.
-To generate the GE graph or use the simple ensemble, use `python -m metaqnn.plot_top_ges -h` for instructions.
+The model used is inside the `dataset` folder.
+To run an experiment, use `python -m metaqnn.main dataset`.
 
-requirements.txt includes all requirements including the exact dependencies used, while requirements.minimal.txt only includes the explicitly installed requirements (generated with `pip-chill`)
+requirements.txt includes all requirements including the exact dependencies used.
 
-**NB:** at most tensorflow 2.1, cuda 10.1 and cudnn 10.1-7.6.0.64 are required. Higher tensorflow versions have some breaking changes that cause the code crash (mostly the One-Cycle LR code). 
+To generate the files "bench_key.npy" and "attack_precomputed_byto0" just run Helper.py.
+
+Inside the folder "data/bench/experiment_value/trained_models" can be found models that are already trained on the dataset we had, while in "data/bench/experiment_value/graphs" there are the plots of the results.
+
+#
+Here are some examples of plots obtained after running the code:
+
 #
 **This code is partially based on:**
 
