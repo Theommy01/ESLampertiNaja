@@ -16,13 +16,13 @@ Inside the folder "data/bench/experiment_value/trained_models" can be found mode
 #
 Here are some examples of plots obtained after running the code:
 
-![Description](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Running%20main%201.png)
+![Network building - 1](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Running%20main%201.png)
 
-![Description](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Running%20main%202.png)
+![Network building - 2](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Running%20main%202.png)
 
-![Descrpition](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Epoch.png)
+![Epoch execution](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Epoch.png)
 
-![Description](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Graph.png)
+![Bench_0001 Graph](https://github.com/Theommy01/ESLampertiNaja/blob/main/images/Graph.png)
 
 #
 **This code is partially based on:**
