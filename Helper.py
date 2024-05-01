@@ -27,11 +27,6 @@ print(valid_windows.shape)
 
 DIM_TEST = 12800
 
-print(test_meta[0])  #(primo byte plaintext, primo byte key) -- key cambia ogni 102
-print(test_meta[100])
-print(test_meta[200])
-#print(train_windows.dtype)
-
 # Importing the library
 import psutil
 
